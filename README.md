@@ -1,33 +1,58 @@
-# daisyui-vue
+# DaisyUI + Supabase Vue Mobile App Template
 
-This template should help get you started developing with Vue 3 in Vite.
+A mobile application template built with Vue 3, DaisyUI, Capacitor, and Supabase authentication. This template provides a ready-to-use mobile app structure with drawer navigation, authentication flows, and responsive UI components.
 
-## Recommended IDE Setup
+## Features
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- 🔐 Authentication with Supabase (Sign In, Sign Up, Sign Out)
+- 📱 Mobile-first design with Capacitor
+- 🎨 UI Components with DaisyUI and TailwindCSS
+- 📦 State management with Pinia
+- 🗺️ Vue Router with protected routes
+- 🔧 TypeScript support
+- 📱 Drawer navigation system
+- 💨 Hot Module Replacement (HMR) for fast development
 
-## Type Support for `.vue` Imports in TS
+## Prerequisites
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
+- Node.js (v18 or later recommended)
+- npm or yarn
+- iOS development: Xcode (for iOS builds)
+- Android development: Android Studio (for Android builds)
 
 ## Project Setup
 
-```sh
-npm install
-```
+1. Clone the repository
+2. Install dependencies:
 
-### Compile and Hot-Reload for Development
+   ```shell
+   npm install
+   ```
 
-```sh
-npm run dev
-```
+3. Configure environment variables:
 
-### Type-Check, Compile and Minify for Production
+   - Copy .env.example to .env
+   - Add your Supabase credentials:
 
-```sh
-npm run build
-```
+     ```shell
+     VITE_SUPABASE_URL=your-supabase-url
+     VITE_SUPABASE_ANON_KEY=your-supabase-anon-key
+     ```
+
+## Key Components
+
+- DrawerComponent: Main navigation drawer
+- NavbarComponent: Top navigation bar
+- AuthStore: Supabase authentication management
+- Protected Routes: Authentication-based route protection
+- Mobile-responsive layouts
+
+## Technologies
+
+- Vue 3
+- DaisyUI
+- Capacitor
+- Supabase
+- Pinia
+- TailwindCSS
+- TypeScript
